@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POFO</title>
-<link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
-    <header>
-<div class="navContainer">
-    <div class="Nhome"><a href="/html/home.html">home</a></div>
-    <div class="Novermij"><a href="/html/overmij.html">overmij</a></div>
-    <div class="Nproject"><a href="/html/project.html">projecten</a></div>
-    <div class="Ncontact"><a href="/html/contact.html">contact</a></div>
-</div>
-<div class="logo"> logo</div>
-<hr class="Ltop">
-    </header>
-    <main>
-        <div class="welkom">
-            <p>Welkom</p>
-        </div>
-    </main>
+
+  <header>
+    <div class="navContainer">
+      <div class="home"> <a href="#one">Home</a></div>
+      <div class="overOns"> <a href="#two">Overmij</a></div>
+      <div class="shop1"><a href="#three">Contact</a></div>
+      <div class="project"><a href="/project.html">Projects</a></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="first" id="one">
+      <h1 class="homeT">Home page</h1>
+    </section>
+
+    <section class="second" id="two">
+      <h1 class="over-ons">Overmij</h1>
+    </section>
+
+    <section class="third" id="three">
+      <h1 class="contact1">contact page</h1>
+      <div class="contactContainer">
+       
+        <form action="action_page.php">
+          <label for="fname">VoorNaam</label>
+          <input type="text" id="fname" name="firstname" placeholder="Je voornaam..">
+      
+          <label for="lname">AchterNaam</label>
+          <input type="text" id="lname" name="lastname" placeholder="Je achternaam..">
+      
+          <label for="subject">Typ hier</label>
+          <textarea id="subject" name="subject" placeholder="Typ iets.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
 </body>
-<footer>
-    <hr class="Lbot">
-</footer>
+
 </html>
