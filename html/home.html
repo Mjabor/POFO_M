@@ -9,13 +9,20 @@
 </head>
 
 <body>
-
+<div class="Container">
   <header>
     <div class="navContainer">
-      <div class="home"> <a href="#one">Home</a></div>
-      <div class="overOns"> <a href="#two">Overmij</a></div>
-      <div class="shop1"><a href="#three">Contact</a></div>
-      <div class="project"><a href="/project.html">Projects</a></div>
+      <div class="navbar">
+        <div class="home"> <a href="#one">Home</a></div>
+        <div class="overOns"> <a href="#two">Overmij</a></div>
+        <div class="contact"><a href="#three">Contact</a></div>
+        <div class="project"><a href="/project.html">Projects</a></div>
+      </div>
+      <div class="dropdown-content">
+        <a href="/project.html#project1">project1 1</a>
+        <a href="/project.html#project2">project 2</a>
+        <a href="/project.html#project3">project 3</a>
+      </div>
     </div>
   </header>
 
@@ -33,14 +40,14 @@
       <div class="contactContainer">
        
         <form action="action_page.php">
-          <label for="fname">VoorNaam</label>
-          <input type="text" id="fname" name="firstname" placeholder="Je voornaam..">
+          <label for="fname">Voornaam</label>
+          <input type="text" id="fname" name="firstname" placeholder="Je voornaam">
       
-          <label for="lname">AchterNaam</label>
-          <input type="text" id="lname" name="lastname" placeholder="Je achternaam..">
+          <label for="lname">Achternaam</label>
+          <input type="text" id="lname" name="lastname" placeholder="Je achternaam">
       
-          <label for="subject">Typ hier</label>
-          <textarea id="subject" name="subject" placeholder="Typ iets.." style="height:200px"></textarea>
+          <label for="subject">Bericht</label>
+          <textarea id="subject" name="subject" placeholder="Typ hier" style="height:200px"></textarea>
       
           <input type="submit" value="Submit">
       
@@ -52,6 +59,10 @@
   <footer>
 
   </footer>
+
+
+</div>
+ 
 </body>
 
 </html>
