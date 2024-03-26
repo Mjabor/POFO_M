@@ -9,66 +9,80 @@
 </head>
 
 <body>
-<div class="Container">
-  <header>
-    <nav>
-      <a href="#one"><button class="button button-home">HOME</button></a>
-      <a href="#two"><button id="#two" class="button button-over-ons">OVER ONS</button></a>
-      <a href="#three"><button class="button button-contact">CONTACT</button></a>
-      <a href="/html/project.html"><button class="button button-contact">project</button></a>
-    </nav>
-    
-  </header>
+  <div class="Container">
+    <header>
+      <nav>
+        <a href="#one"><button class="button button-home">HOME</button></a>
+        <a href="#two"><button id="#two" class="button button-over-ons">OVER ONS</button></a>
+        <a href="#three"><button class="button button-contact">PROJECT</button></a>
+        <a href="#four"><button class="button button-contact">CONTACT</button></a>
+      </nav>
 
-  <main>
-    <section class="first" id="one">
-      <h1 class="homeT">Home page</h1>
-    </section>
+    </header>
 
-    <section class="second" id="two">
-      <h1 class="over-ons"></h1>
-      <div class="card">
-        <div class="img-container">
-          <img src="/img/mehdy.png" alt="" />
+    <main>
+      <section class="first" id="one">
+        <h1 class="homeT">Home page</h1>
+      </section>
+
+      <section class="second" id="two">
+        <h1 class="over-ons"></h1>
+        <div class="card">
+          <div class="img-container">
+            <img src="/img/mehdy.png" alt="" />
+          </div>
+          <div class="card-details">
+            <h2>Mehdy Jabor</h2>
+            <p>
+              Mehdy Jabor is een sportieve jongen die coderen leuk vind, hij zit
+              op het Roc mondriaan. Zijn hobbies zijn gymen, gamen, slapen, best
+              doen om iets nieuwe te leren.
+            </p>
+          </div>
+      </section>
+
+      <section class="three" id="three">
+        <h1 class="over-ons"></h1>
+        <div class="card">
+          <div class="img-container">
+            <img src="" alt="" />
+          </div> 
+          <div class="card-details">
+            <h1>Mijn project</h1>
+            <p>
+              Dit is mijn meest recente project . Een webcatalog die ik samen met daim en hasnain heb gemaakt.
+            </p>
+          </div>
+      </section>
+
+      <section class="fourth" id="four">
+        <h1 class="contact1">contact page</h1>
+        <div class="contactContainer">
+
+          <form method="get" action="action_page.php">
+            <label for="fname">Voornaam</label>
+            <input type="text" id="fname" name="firstname" placeholder="Je voornaam">
+
+            <label for="lname">Achternaam</label>
+            <input type="text" id="lname" name="lastname" placeholder="Je achternaam">
+
+            <label for="subject">Bericht</label>
+            <textarea id="subject" name="subject" placeholder="Typ hier" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+          </form>
         </div>
-        <div class="card-details">
-          <h2>Mehdy Jabor</h2>
-          <p>
-            Mehdy Jabor is een sportieve jongen die coderen leuk vind, hij zit
-            op het Roc mondriaan. Zijn hobbies zijn gymen, gamen, slapen, best
-            doen om iets nieuwe te leren.
-          </p>
-        </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="third" id="three">
-      <h1 class="contact1">contact page</h1>
-      <div class="contactContainer">
-       
-        <form action="action_page.php">
-          <label for="fname">Voornaam</label>
-          <input type="text" id="fname" name="firstname" placeholder="Je voornaam">
-      
-          <label for="lname">Achternaam</label>
-          <input type="text" id="lname" name="lastname" placeholder="Je achternaam">
-      
-          <label for="subject">Bericht</label>
-          <textarea id="subject" name="subject" placeholder="Typ hier" style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
-    </section>
-  </main>
+    <footer>
 
-  <footer>
-
-  </footer>
+    </footer>
 
 
-</div>
- 
+  </div>
+
 </body>
 
 </html>
