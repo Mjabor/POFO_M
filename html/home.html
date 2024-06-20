@@ -1,88 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
-<body>
-  <div class="Container">
+<body class="bg-dark text-white">
+  <div class="container-fluid">
+    <!-- Header -->
     <header>
-      <nav>
-        <a href="#one"><button class="button button-home">HOME</button></a>
-        <a href="#two"><button id="#two" class="button button-over-ons">OVER ONS</button></a>
-        <a href="#three"><button class="button button-contact">PROJECT</button></a>
-        <a href="#four"><button class="button button-contact">CONTACT</button></a>
+      <!-- Bootstrap Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navigation links -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#one">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#two">OVER ONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#three">PROJECT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#four">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
     </header>
 
     <main>
-      <section class="first" id="one">
-        <h1 class="homeT">Home page</h1>
+      <!-- Home Section -->
+      <section class="first bg-dark text-white py-5" id="one">
+        <div class="container">
+          <h1 class="homeT text-center">Home page</h1>
+        </div>
       </section>
 
-      <section class="second" id="two">
-        <h1 class="over-ons"></h1>
-        <div class="card">
-          <div class="img-container">
-            <img src="/img/mehdy.png" alt="" />
+      <!-- Over Ons Section -->
+      <section class="second bg-dark text-white py-5" id="two">
+        <div class="container">
+          <h1 class="over-ons text-center mb-4">Over ons</h1>
+          <div class="card bg-secondary text-white d-flex justify-content-center align-items-center">
+            <img src="/img/MicrosoftTeams-image.png" class="img-fluid rounded-circle" style="max-width: 150px;" alt="Mehdy Jabor">
+            <div class="card-body text-center">
+              <h2>Mehdy Jabor</h2>
+              <p class="text-muted">Ik ben Mehdy Jabor, student bij rocmondriaan school voor ict.</p>
+            </div>
           </div>
-          <div class="card-details">
-            <h2>Mehdy Jabor</h2>
-            <p>
-               Ik ben Mehdy Jabor . student bij rocmondriaan school voor ict
-            </p>
-          </div>
+        </div>
       </section>
 
-      <section class="three" id="three">
-        <h1 class="over-ons"></h1>
-        <div class="card">
-          <div class="img-container2">
-            <img class="homeImg" src="/img/home.project.png" alt="" />
-            <img class="pcImg" src="/img/pc.project.png" alt="" />
-            <img class="gpuImg" src="/img/gpu.project.png" alt="" />
-          </div> 
-          <div class="card-details">
-            <h1>Mijn project</h1>
-            <p>
-              Dit is mijn meest recente project . Een webcatalog die ik samen met daim en hasnain heb gemaakt.
-            </p>
+      <!-- Project Section -->
+      <section class="third bg-dark text-white py-5" id="three">
+        <div class="container">
+          <h1 class="over-ons text-center mb-4">Mijn project</h1>
+          <div class="card bg-secondary text-white">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="/img/home.project.png" class="img-fluid" alt="Home project">
+              </div>
+              <div class="col-md-4">
+                <img src="/img/pc.project.png" class="img-fluid" alt="PC project">
+              </div>
+              <div class="col-md-4">
+                <img src="/img/gpu.project.png" class="img-fluid" alt="GPU project">
+              </div>
+            </div>
+            <div class="card-body">
+              <h2>Mijn project</h2>
+              <p>Dit is mijn meest recente project. Een webcatalogus die ik samen met Daim en Hasnain heb gemaakt.</p>
+            </div>
           </div>
+        </div>
       </section>
 
-      <section class="fourth" id="four">
-        <h1 class="contact1">contact page</h1>
-        <div class="contactContainer">
-
-          <form method="get" action="action_page.php">
-            <label for="fname">Voornaam</label>
-            <input type="text" id="fname" name="firstname" placeholder="Je voornaam">
-
-            <label for="lname">Achternaam</label>
-            <input type="text" id="lname" name="lastname" placeholder="Je achternaam">
-
-            <label for="subject">Bericht</label>
-            <textarea id="subject" name="subject" placeholder="Typ hier" style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-
-          </form>
+      <!-- Contact Section -->
+      <section class="fourth bg-dark text-white py-5" id="four">
+        <div class="container">
+          <h1 class="contact1 text-center mb-4">Contact page</h1>
+          <div class="contactContainer">
+            <form method="get" action="action_page.php">
+              <div class="mb-3">
+                <label for="fname" class="form-label">Voornaam</label>
+                <input type="text" class="form-control" id="fname" name="firstname" placeholder="Je voornaam">
+              </div>
+              <div class="mb-3">
+                <label for="lname" class="form-label">Achternaam</label>
+                <input type="text" class="form-control" id="lname" name="lastname" placeholder="Je achternaam">
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Bericht</label>
+                <textarea class="form-control" id="subject" name="subject" placeholder="Typ hier" style="height:200px"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
-
+    <!-- Footer -->
+    <footer class="bg-secondary text-white text-center py-4">
+      <div class="container">
+        Footer content here
+      </div>
     </footer>
-
-
   </div>
 
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
